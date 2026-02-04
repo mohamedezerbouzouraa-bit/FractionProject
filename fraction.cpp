@@ -3,7 +3,6 @@
 using namespace std;
 
 Fraction::Fraction() : num(0), den(1) {}
-
 Fraction::Fraction(int n, int d) {
     if(d == 0) {
         cout << "Erreur: dénominateur nul" << endl;
@@ -13,10 +12,8 @@ Fraction::Fraction(int n, int d) {
         den = d;
     }
 }
-
 int Fraction::getNum() { return num; }
 int Fraction::getDen() { return den; }
-
 void Fraction::setFraction(int n, int d) {
     if(d == 0) {
         cout << "Erreur: dénominateur nul" << endl;
